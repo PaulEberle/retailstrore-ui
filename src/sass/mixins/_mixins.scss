@@ -1,0 +1,41 @@
+// Mixin for bullet-proof font declaration..
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('./fonts/#{$font-filename}.eot');
+    src: url('./fonts/#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+      url('./fonts/#{$font-filename}.woff') format('woff'),
+      url('./fonts/#{$font-filename}.ttf') format('truetype'),
+      url('./fonts/#{$font-filename}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+  }
+}
+
+// Mixin for media queries
+/**
+ * Usage
+ *
+ * .test {
+ *   color: red;
+ *   @include mq(sm) {
+ *     color: blue;
+ *   }
+ * }
+ *
+ */
+@mixin mq($point) {
+  @if $point == xs {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $point == sm {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == md {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+}
