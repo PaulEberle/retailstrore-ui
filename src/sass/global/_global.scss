@@ -1,0 +1,143 @@
+nav.navbar {
+	padding-bottom: 0;
+	.navbar-nav {
+		margin-left: -1rem;
+		margin-right: -1rem;
+		.nav-item {
+			.nav-link {
+				font-size: 0.875rem;
+				text-align: center;
+				color: #333;
+				padding: 1.032rem 0;
+				&:hover, &:focus {
+					color: #fff;
+					background-color: #b26200;
+				}
+			}
+			&.active {
+				.nav-link {
+					color: #fff;
+					background-color: #b26200;
+					@include mq(md) {
+						color: #333;
+						background-color: #fff;
+					}
+				}
+			}
+			.dropdown-menu {
+				&.show {
+					@media (max-width: 767px) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	@include mq(md) {
+		padding-left: 0;
+		padding-right: 0;
+		.navbar-nav {
+			display: block;
+			width: 100%;
+			text-align: right;
+			margin-top: .5rem;
+			.nav-item {
+				display: inline-block;
+				font-size: .85rem;
+				&.show {
+					.nav-link {
+						border-color: #e37c00;
+					}
+				}
+				&:last-child {
+					.nav-link {
+						margin-right: -1rem;
+					}
+				}
+				.nav-link {
+					border-bottom: 3px solid transparent;
+					padding-left: 0;
+					padding-right: 0;
+					margin: 0 .5rem;
+					padding-bottom: 0.4375rem;
+					&:hover, &:focus {
+						color: #333;
+						border-color: #e37c00;
+						background-color: #fff;
+					}
+				}
+				.dropdown-menu {
+					margin-top: 0;
+					padding: 0;
+					left: .45rem;
+					border-radius: 0;
+					min-width: 1rem;
+					border-color: #d7d7d7;
+					.dropdown-item {
+						border-left: solid 5px transparent;
+						color: #06c;
+						font-size: .75rem;
+						white-space: normal;
+						text-transform: uppercase;
+						padding: 0.625rem 0 0.625rem .75rem;
+						&:hover, &:focus {
+							border-color: #06c;
+							background-color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include mq(lg) {
+		.navbar-nav {
+			.nav-item {
+				.nav-link {
+					font-size: 1.063rem;
+				}
+				.dropdown-menu {
+					left: 1.2rem;
+					.dropdown-item {
+						font-size: .875rem;
+					}
+				}
+			}
+		}
+	}
+	.dropdown-toggle:after {
+		display: none;
+	}
+	@include mq(lg) {
+		.navbar-nav {
+			.nav-item {
+				font-size: 1.0625rem;
+				.nav-link {
+					margin: 0 1.25rem;
+				}
+			}
+		}
+	}
+	&.bg-light {
+		background-color: #fff !important;
+	}
+	&.fixed-top {
+		@include mq(md) {
+			position: initial;
+			padding-bottom: 1.25rem;
+		}
+	}
+	.navbar-toggler {
+		border-color: transparent;
+		margin-right: -1rem;
+		outline: none;
+	}
+	.navbar-brand {
+		img {
+			width: 102px;
+			height: auto;
+			@include mq(md) {
+				width: 180px;
+			}
+		}
+	}
+}
