@@ -5,7 +5,7 @@
 
 **Site:** [bluecrossmn.com/centers](https://www.bluecrossmn.com/centers/)
 
-**Objective:** Duplicate the font-end code of the [retail site](https://www.bluecrossmn.com/centers/) using bootstrap
+**Objective:** Duplicate the font-end code of the [retail site](https://www.bluecrossmn.com/centers/) using Bootstrap v4.0.0-beta
 
 ---
 

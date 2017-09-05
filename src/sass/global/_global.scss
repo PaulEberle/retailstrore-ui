@@ -17,9 +17,17 @@ body {
 
 nav.navbar {
 	padding-bottom: 0;
-	.navbar-nav {
+	.collapse, .collapsing {
+		flex: auto;
 		margin-left: -1rem;
 		margin-right: -1rem;
+		width: 100%;
+	}
+	.navbar-brand {
+		padding-top: 0;
+		padding-bottom: .625rem;
+	}
+	.navbar-nav {
 		.nav-item {
 			.nav-link {
 				font-size: 0.875rem;
@@ -53,6 +61,10 @@ nav.navbar {
 	@include mq(md) {
 		padding-left: 0;
 		padding-right: 0;
+		.navbar-brand {
+			padding-top: .3125rem;
+			padding-bottom: .3125rem;
+		}
 		.navbar-nav {
 			display: block;
 			width: 100%;
@@ -66,9 +78,14 @@ nav.navbar {
 						border-color: #e37c00;
 					}
 				}
+				&.active {
+					.nav-link {
+						border-bottom: 3px solid #e37c00;
+					}
+				}
 				&:last-child {
 					.nav-link {
-						margin-right: -1rem;
+						margin-right: 1rem;
 					}
 				}
 				.nav-link {
