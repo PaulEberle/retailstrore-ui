@@ -1,6 +1,6 @@
 $(function(){
-
 	var windowWidth = $(window).width();
+	var currentYear = new Date().getFullYear();
 	if (windowWidth > 767) { // desktop ( 768px & up)
 		$('li.nav-item.dropdown').mouseover(function() {
 			$(this).addClass('show');
@@ -26,4 +26,9 @@ $(function(){
 			$(this).find('> .dropdown-menu').width(navItemWidth-40);
 		});
 	}
+	/*
+	 * Footer
+	 * Always have current year after copyright symbol
+	 */
+	$('.copyright .current-year').text(currentYear);
 });
