@@ -1,0 +1,140 @@
+/*
+ * Home
+ */
+ nav.navbar + div.alert-home {
+    margin-top: 74px;
+    @include mq(md) {
+    	margin-top: 0;
+    }
+}
+ .alert-home {
+ 	margin-bottom: 0;
+ 	background-color: #FFC82C;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	border-color: #FFC82C;
+ 	border-radius: 0;
+ 	font-size: 1.188rem;
+ 	color: #333;
+ 	padding: 1.094rem 1.25rem;
+ 	a {
+ 		color: #333;
+ 	}
+ 	+ .card-group.home {
+ 		.card-left {
+ 			.card-body {
+ 				padding-top: 0;
+				@include mq(md) {
+					padding-top: 1.25rem;
+				}
+ 			}
+ 		}
+ 	}
+ }
+.card-group.home {
+	.card {
+		border: none;
+		border-radius: 0;
+		flex: none;
+		width: 100%;
+		background-color: transparent;
+		.img-fluid {
+			width: 100%;
+		}
+		&.card-left {
+			@include mq(md) {
+				width: (100% / 3);
+				flex: none;
+				background-color: #005172;
+			}
+			h1 {
+				text-transform: uppercase;
+				font-weight: bold;
+				color: #fff;
+				margin-top: .5em;
+				font-size: 1.688rem;
+				@include mq(md) {
+					margin-top: 0;
+					font-size: 1.625rem;
+				}
+			}
+			a {
+				color: #fff;
+				text-decoration: underline;
+			}
+			.card-body {
+				font-size: 1.125rem;
+				color: #fff;
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				@include mq(md) {
+					font-size: 1.3rem;
+					padding-left: 1.25rem;
+					padding-right: 1.25rem;
+					padding-bottom: 1.25rem;
+				}
+			}
+			.img-fluid {
+				width: 100%;
+			}
+		}
+		&.card-right {
+			width: 100%;
+			@include mq(md) {
+				background-color: #522a15;
+				background-image: url(../imgs/woodgrain.jpg);
+				background-size: auto 100%;
+				background-repeat: round;
+				width: (100% / 3) * 2;
+			}
+			.card-body {
+				padding-left: 0;
+				padding-right: 0;
+				@include mq(md) {
+					padding-left: 1.25rem;
+					padding-right: 1.25rem;
+				}
+				.btn {
+					margin-top: 1em;
+					width: 100%;
+					border-radius: 0;
+					background-color: #005172;
+					border-color: #005172;
+					color: #fff;
+					text-transform: uppercase;
+					font-weight: bold;
+					&:hover, &:focus {
+						background-color: #b26200;
+						border-color: #b26200;
+					}
+					@include mq(md) {
+						margin-top: 1.25em;
+						background-color: #fff;
+						border-color: #fff;
+						color: #005172;
+						&:hover, &:focus {
+							background-color: #005172;
+							border-color: #005172;
+							color: #fff;
+						}
+					}
+					@include mq(lg) {
+						width: 47.6%;
+						margin: 3rem 0;
+						&:first-child {
+							margin-right: 1rem;
+						}
+					}
+					@include mq(xl) {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+			.img-fluid {
+				width: 100%;
+			}
+		}
+	}
+}
