@@ -10,7 +10,7 @@ body {
 	}
 	@media (max-width: 991px) {
 		.container {
-			max-width: 100%;
+			max-width: calc(100% - 2px);
 		}
 	}
 }
@@ -30,7 +30,7 @@ nav.navbar {
 	.navbar-nav {
 		.nav-item {
 			.nav-link {
-				font-size: 0.875rem;
+				font-size: 1rem;
 				text-align: center;
 				color: #333;
 				padding: 1.032rem 0;
@@ -163,6 +163,7 @@ nav.navbar {
 	.navbar-toggler {
 		border-color: transparent;
 		margin-right: -1rem;
+		margin-top: -.65rem;
 		outline: none;
 	}
 	.navbar-brand {
