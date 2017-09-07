@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Classes | Retail Centers</title>
+		<link rel='stylesheet' href='./assets/css/style.min.css'>
+		<link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico"/>
+	</head>
+	<body>
+		<div class="container">
+
+			<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+				<a class="navbar-brand" href="./">
+					<img src="./assets/imgs/retail_logo.png" alt="Blue Cross MN Logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="#classes">Classes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#appointments">Appointments</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="./contact.html" role="button" aria-haspopup="true" aria-expanded="false">Hours and Locations</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#edina">Edina Retail Center</a>
+								<a class="dropdown-item" href="#roseville">Roseville Retail Center</a>
+								<a class="dropdown-item" href="#duluth">Duluth Retail Center</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#subscribe">Subscribe</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#bcbsmn">bluecrossmn.com</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="card card-page-title">
+				<div class="card-body">
+    				<h1 class="card-title">Classes and Events</h1>
+    				<div class="d-none d-md-block classes-description">
+					<p>Have questions about Medicare? Looking for an individual or family plan? Sign up for a class to get helpful tips on how to find a plan that fits your lifestyle and budget.</p>
+					<p>Or attend a session on healthy living to get expert advice on improving and maintaining your health, understanding and managing chronic conditions or helping a loved one live with theirs. Classes are free and open to the public but seating is limited so register today.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="card d-md-none" id="card-classes-search">
+				<div class="card-header" role="tab" id="headingTwo">
+					<div class="mb-0">
+						<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-search" aria-hidden="true"></i> Filter and Search</a>
+					</div>
+				</div>
+				<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label for="drop-loc">Filter By Location</label>
+								<select class="form-control" id="drop-loc">
+									<option>- Select -</option>
+									<option>Edina Retail Center</option>
+									<option>Duluth Retail Center</option>
+									<option>Roseville Retail Center</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="text-classname">Search By Class Name</label>
+								<input type="text" class="form-control" id="text-classname">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div class="card-group" id="card-group-table-wrapper">
+				<div class="card card-filter d-none d-md-block col-md-3">
+					<div class="card-body">
+						<div class="h5">Filter By Location</div>
+						<form>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="Duluth" checked>
+									Duluth Retail Center
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="Edina" checked>
+									Edina Retail Center
+								</label>
+							</div>
+							<div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input" type="checkbox" value="Roseville" checked>
+									Roseville Retail Center
+								</label>
+							</div>
+							<div class="form-group">
+								<label class="h5" for="text-classname-md">Search By Class Name</label>
+								<input type="text" class="form-control" id="text-classname-md">
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="card card-table col-md-9">
+					<div class="card-body">
+						<table class="table table-bordered col-md-9 table-responsive mx-0 px-0" id="table-classes">
+							<thead>
+								<tr>
+									<th>Class <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+									<th>Date <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+									<th>Time <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+									<th>Location <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+									<th>Open Seats <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+									<th>Options <i class="fa fa-caret-down" aria-hidden="true"></i></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#medwrkshp" class="class-name d-none d-md-block">Know Your Health Plan / Health Saving Account Class</a>
+										<a href="#medwrkshp" class="d-md-none">
+											<div class="line-1">
+												<span class="class-name">Know Your Health Plan / Health Saving Account Class</span>
+												<span class="location">Duluth Retail Center</span>
+											</div>
+											<div class="line-2">
+												<span class="date">Wednesday, September 6</span>
+												<span class="time">12:00-1:00 PM</span>
+											</div>
+											<div class="line-3">
+												<span class="option">Sign Up</span>
+											</div>
+										</a>
+									</td>
+									<td data-date="20170906-1200" class="date">Wednesday, September 6</td>
+									<td data-time="1200" class="time">12:00-1:00 PM</td>
+									<td class="location">Duluth Retail Center</td>
+									<td class="seats">30</td>
+									<td class="option"><a href="#signup" class="btn btn-primary d-block">Sign Up</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#medwrkshp" class="class-name d-none d-md-block">Medicare Workshop</a>
+										<a href="#medwrkshp" class="d-md-none">
+											<div class="line-1">
+												<span class="class-name">Medicare Workshop</span>
+												<span class="location">Edina Retail Center</span>
+											</div>
+											<div class="line-2">
+												<span class="date">Thursday, September 7</span>
+												<span class="time">2:00-3:00 PM</span>
+											</div>
+											<div class="line-3">
+												<span class="option">Sign Up</span>
+											</div>
+										</a>
+									</td>
+									<td data-date="20170907-1400" class="date">Thursday, September 7</td>
+									<td data-time="1400" class="time">2:00-3:00 PM</td>
+									<td class="location">Edina Retail Center</td>
+									<td class="seats">See class description</td>
+									<td class="option"><a href="#signup" class="btn btn-primary d-block">Sign Up</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#medwrkshp" class="class-name d-none d-md-block">Medicare Workshop</a>
+										<a href="#medwrkshp" class="d-md-none">
+											<div class="line-1">
+												<span class="class-name">Medicare Workshop</span>
+												<span class="location">Roseville Retail Center</span>
+											</div>
+											<div class="line-2">
+												<span class="date">Thursday, September 7</span>
+												<span class="time">4:00-5:00 PM</span>
+											</div>
+											<div class="line-3">
+												<span class="option">Sign Up</span>
+											</div>
+										</a>
+									</td>
+									<td data-date="20170907-1600" class="date">Thursday, September 7</td>
+									<td data-time="1600" class="time">4:00-5:00 PM</td>
+									<td class="location">Roseville Retail Center</td>
+									<td class="seats">See class description</td>
+									<td class="option"><a href="#signup" class="btn btn-primary d-block">Sign Up</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#medwrkshp" class="class-name d-none d-md-block">CPR/AED and First Aid Class</a>
+										<a href="#medwrkshp" class="d-md-none">
+											<div class="line-1">
+												<span class="class-name">CPR/AED and First Aid Class</span>
+												<span class="location">Duluth Retail Center</span>
+											</div>
+											<div class="line-2">
+												<span class="date">Monday, September 11</span>
+												<span class="time">1:00-5:00 PM</span>
+											</div>
+											<div class="line-3">
+												<span class="option wait">Join Wait List</span>
+											</div>
+										</a>
+									</td>
+									<td data-date="20170911-1300" class="date">Monday, September 11</td>
+									<td data-time="1300" class="time">1:00-5:00 PM</td>
+									<td class="location">Duluth Retail Center</td>
+									<td class="seats">0</td>
+									<td class="option wait"><a href="#signup" class="btn btn-primary d-block">Join Wait List</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#medwrkshp" class="class-name d-none d-md-block">ForeverWell Y Series : Balance Basics &amp; Assessments</a>
+										<a href="#medwrkshp" class="d-md-none">
+											<div class="line-1">
+												<span class="class-name">ForeverWell Y Series : Balance Basics &amp; Assessments</span>
+												<span class="location">Edina Retail Center</span>
+											</div>
+											<div class="line-2">
+												<span class="date">Monday, September 11</span>
+												<span class="time">1:30-2:30 PM</span>
+											</div>
+											<div class="line-3">
+												<span class="option">Sign Up</span>
+											</div>
+										</a>
+									</td>
+									<td data-date="20170911-1330" class="date">Monday, September 11</td>
+									<td data-time="1330" class="time">1:30-2:30 PM</td>
+									<td class="location">Edina Retail Center</td>
+									<td class="seats">15</td>
+									<td class="option"><a href="#signup" class="btn btn-primary d-block">Sign Up</a></td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#medwrkshp" class="class-name d-none d-md-block">Medicare Workshop</a>
+										<a href="#medwrkshp" class="d-md-none">
+											<div class="line-1">
+												<span class="class-name">Medicare Workshop</span>
+												<span class="location">Edina Retail Center</span>
+											</div>
+											<div class="line-2">
+												<span class="date">Tuesday, September 12</span>
+												<span class="time">10:00-11:00 AM</span>
+											</div>
+											<div class="line-3">
+												<span class="option">Sign Up</span>
+											</div>
+										</a>
+									</td>
+									<td data-date="20170912-1000" class="date">Tuesday, September 12</td>
+									<td data-time="1000" class="time">10:00-11:00 AM</td>
+									<td class="location">Edina Retail Center</td>
+									<td class="seats">See class description</td>
+									<td class="option"><a href="#signup" class="btn btn-primary d-block">Sign Up</a></td>
+								</tr>
+							</tbody>
+						</table>
+						<nav class="d-none d-md-block" aria-label="Navigate multiple pages of classes">
+							<ul class="pagination justify-content-center">
+								<li class="page-item previous">
+									<a class="page-link" href="#">
+										<i class="fa fa-caret-left" aria-hidden="true"></i>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">1</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link" href="#">2</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">4</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">5</a>
+								</li>
+								<li class="page-item next">
+									<a class="page-link" href="#">
+										<i class="fa fa-caret-right" aria-hidden="true"></i>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="card card-classes-disclaimer">
+				<div class="card-body">
+					<p>Blue Cross offers Cost and PDP plans with Medicare contracts. Enrollment in these plans depends on contract renewal. Plans are available to residents of the service area. A sales person will be present with information and applications. For accommodations of persons with special needs at sales meetings, call toll free 855-579-7658, 8 a.m. to 8 p.m. Central time, daily. TTY users call 711.</p>
+					<p>H2461_101014_N01 CMS Approved 10/15/2014<br>S5743_101014_B01_MN CMS Approved 10/22/2014</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="copyright col-sm-12">
+					<p>&copy; <span class="current-year"></span> Blue Cross and Blue Shield of Minnesota. All rights reserved.</p>
+					<p>Blue Cross<sup>&reg;</sup> and Blue Shield<sup>&reg;</sup> of Minnesota and Blue Plus<sup>&reg;</sup> are nonprofit independent licensees of the Blue Cross and Blue Shield Association.</p>
+				</div>
+			</div>
+		</div>
+
+		<script src='./assets/js/jquery.min.js'></script>
+		<script src='./assets/js/popper.min.js'></script>
+		<script src='./assets/js/bootstrap.min.js'></script>
+		<script src='./assets/js/tablesorter.min.js'></script>
+		<script src='./assets/js/scripts.min.js'></script>
+	</body>
+</html>

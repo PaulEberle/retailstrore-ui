@@ -176,6 +176,31 @@ nav.navbar {
 	}
 }
 
+.card-page-title {
+	border-width: 0;
+	@include mq(md) {
+		border-radius: 0;
+	}
+	.card-body {
+		padding: 0;
+		background-color: #003359;
+		@include mq(md) {
+			background-color: #f6f6f6;
+		}
+	}
+	h1 {
+		color: #fff;
+		font-size: 1.5rem;
+		padding-top: 1.25rem;
+		background-color: transparent;
+		@include mq(md) {
+			background-color: #005172;
+			padding: 0.3125rem 0.9375rem;
+			font-size: 1.625rem;
+		}
+	}
+}
+
 .copyright {
 	padding-top: 1.5em;
 	padding-bottom: 1.5em;

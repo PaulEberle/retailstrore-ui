@@ -26,6 +26,34 @@ $(function(){
 			$(this).find('> .dropdown-menu').width(navItemWidth-40);
 		});
 	}
+
+	/*
+	 * Page - Classes
+	 */
+	$.tablesorter.addParser({
+	    id: 'data',
+	    is: function(s, table, cell, $cell) {
+	      return false;
+	    },
+	    format: function(s, table, cell, cellIndex) {
+	      var $cell = $(cell);
+	      if (cellIndex === 1) {
+	        return $cell.attr('data-date') || s;
+	      } else if (cellIndex === 2) {
+	        return $cell.attr('data-time') || s;
+	      }
+	      return s;
+	    },
+	    parsed: false,
+	    type: 'text'
+	  });
+	  $('#table-classes').tablesorter({
+	    headers: {
+	      1 : { sorter: 'data' },
+	      2 : { sorter: 'data' }
+	    },
+	  });
+
 	/*
 	 * Footer
 	 * Always have current year after copyright symbol
