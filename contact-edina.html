@@ -3,11 +3,21 @@
 	<head>
 		<meta charset='UTF-8'>
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Home | Retail Centers</title>
+		<title>Edina Location | Retail Centers</title>
 		<link rel='stylesheet' href='./assets/css/style.min.css'>
 		<link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico"/>
 	</head>
 	<body>
+
+		<script>
+			// Specified locations do not have a mobile view - they redirect to the Hours and Locations page
+			window.onresize = function () {
+				if ((window.innerWidth < 768))  {
+					window.location.href = "./contact.html";
+				};
+			};
+		</script>
+
 		<div class="container">
 
 			<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
@@ -25,7 +35,7 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#appointments">Appointments</a>
 						</li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" href="./contact.html" role="button" aria-haspopup="true" aria-expanded="false">Hours and Locations</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="./contact-edina.html">Edina Retail Center</a>
@@ -43,38 +53,48 @@
 				</div>
 			</nav>
 
-
-				<div class="alert alert-warning alert-home" role="alert"><a href="#alert">Now you can schedule an online meeting to choose your plan. Make an appointment today.</a></div>
-
-				<div class="card-group home">
-
-					<div class="card card-left d-md-inline-block">
-						<div class="card-body">
-							<img class="img-fluid d-md-none" src="./assets/imgs/retail_interior.png">
-							<h1 class="card-title">Where your questions meet our expertise: face to face</h1>
-							<p class="card-text">We're here to help. Stop in today to talk to someone about:</p>
-							<ul>
-								<li>Coverage options</li>
-								<li>Claims and benefits</li>
-								<li>Classes</li>
-							</ul>
-							<p class="card-text"><a href="#subscribe">Subscribe</a> to get updates on classes, events and more.</p>
-						</div>
-					</div>
-
-					<div class="card card-right d-md-inline-block">
-						<img class="img-fluid d-none d-md-block" src="./assets/imgs/retail_interior.png">
-						<div class="card-body">
-							<a href="./classes.html" class="btn btn-light d-none d-md-inline-block">Choose a class</a>
-							<a href="#schedappt" class="btn btn-light d-none d-md-inline-block">Schedule an appointment</a>
-							<a href="./classes.html" class="btn btn-light d-md-none">Classes</a>
-							<a href="#appointments" class="btn btn-light d-md-none">Appointments</a>
-							<a href="./contact.html" class="btn btn-light d-md-none">Hours and Locations</a>
-						</div>
-					</div>
-
+			<div class="card card-page-title">
+				<div class="card-body d-none d-md-block">
+    				<h1 class="card-title">Location - Edina Retail Center</h1>
 				</div>
+			</div>
 
+			<div class="card-group d-none d-md-flex" id="card-group-wrapper">
+				<div class="card card-location d-none d-md-block col-md-5">
+					<div class="card-body">
+						<div class="loc-details">
+							<img class="img-fluid mx-auto d-block" src="./assets/imgs/location-edina.jpg" alt="Edina Store Front Image">
+							<div class="address">
+								<strong>Address</strong>
+								<div class="location-name">Yorkdale Shoppes</div>
+								<div class="street-1">6807 York Avenue South</div>
+								<div class="city-st-zip">Edina, MN 55435</div>
+							</div>
+							<div class="phone">
+								<strong>Phone Number</strong>
+								<div class="phone-number">(952) 967-2750</div>
+								<div class="tty">TTY users call 711</div>
+							</div>
+							<div class="hours">
+								<strong>Business Hours</strong>
+								<div class="week">Monday – Friday: 8 a.m. – 6 p.m.</div>
+								<div class="weekend">Saturday/Sunday: Closed</div>
+							</div>
+							<a href="#" class="btn btn-primary d-block">View Classes and Events</a>
+							<a href="#" class="btn btn-primary d-block">Schedule an Appointment</a>
+						</div>
+					</div>
+				</div>
+				<div class="card card-map d-none d-md-block col-md-7">
+					<div class="card-body">
+						<div id="map_wrapper_specific">
+							<div id="map_canvas" class="mapping">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.169546937377!2d-93.32218338401658!3d44.87919847909824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f626a03601cdeb%3A0xaf4708de5857e739!2s6807+York+Ave+S%2C+Edina%2C+MN+55435!5e0!3m2!1sen!2sus!4v1504887077912" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="row">
 				<div class="copyright col-sm-12">
 					<p>&copy; <span class="current-year"></span> Blue Cross and Blue Shield of Minnesota. All rights reserved.</p>

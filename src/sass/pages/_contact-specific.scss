@@ -1,0 +1,37 @@
+.card-location {
+	.card-body {
+		padding-top: 0.625rem;
+	}
+	.loc-details {
+		.address, .phone, .hours, .parking {
+			font-size: 0.8125rem;
+			margin-top: .75rem;
+		}
+		.parking {
+			strong {
+				text-transform: uppercase;
+			}
+		}
+		.btn {
+			margin-top: .75rem;
+			border-radius: 0;
+			border-width: 0;
+			background-color: #005172;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.75rem;
+			padding: 0.625rem 0.9375rem;
+			transition-duration: 0s;
+			&:hover, &:focus {
+				background-color: #e37c00;
+			}
+		}
+	}
+}
+
+#map_wrapper_specific {
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}

@@ -12172,3 +12172,38 @@ nav.navbar + div.alert-home {
     border-color: #d7d7d7;
   }
 }
+
+.card-location .card-body {
+  padding-top: 0.625rem;
+}
+
+.card-location .loc-details .address, .card-location .loc-details .phone, .card-location .loc-details .hours, .card-location .loc-details .parking {
+  font-size: 0.8125rem;
+  margin-top: .75rem;
+}
+
+.card-location .loc-details .parking strong {
+  text-transform: uppercase;
+}
+
+.card-location .loc-details .btn {
+  margin-top: .75rem;
+  border-radius: 0;
+  border-width: 0;
+  background-color: #005172;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.625rem 0.9375rem;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.card-location .loc-details .btn:hover, .card-location .loc-details .btn:focus {
+  background-color: #e37c00;
+}
+
+#map_wrapper_specific iframe {
+  width: 100%;
+  height: 100%;
+}

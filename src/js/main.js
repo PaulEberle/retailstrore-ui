@@ -85,6 +85,12 @@ $(function(){
 			$('.card-loc-list .card-body .loc-details').height(cardMapWidth-40);
 		}
 
+		// Size map appropriately for location specific pages
+		if($("#map_wrapper_specific").length > 0) {
+			var cardMapWidth = $('.card-map').width();
+			$('#map_wrapper_specific').height(cardMapWidth-20);
+		}
+
 	} else { // mobile (767px & down)
 		// Do nothing
 	}
