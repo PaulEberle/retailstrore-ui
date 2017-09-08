@@ -1,0 +1,132 @@
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.card-loc-list, .card-map {
+	.card-body {
+		padding-top: 0.625rem;
+	}
+}
+
+.card-map {
+	.card-body {
+		padding-left: 0;
+	}
+}
+
+
+.card-body {
+	&.loc-details {
+		.location {
+			h2 {
+				color: #fff;
+				font-size: 1.5rem;
+				margin-top: 1.5rem;
+			}
+			.input-group {
+				+ .input-group {
+					margin-top: 0.9375rem;
+				}
+				.input-group-addon {
+					&:first-child {
+						width: 2.375rem;
+						display: grid;
+						text-align: center;
+						background-color: #d7d7d7;
+						color: #555;
+					}
+					&:last-child {
+						width: 3rem;
+						display: grid;
+						text-align: center;
+					}
+				}
+			}
+			.input-group-addon, .form-control, .btn {
+				border-width: 0;
+				border-radius: 0;
+				z-index: initial;
+			}
+			.form-control {
+				display: block;
+				font-size: 0.875rem;
+				.phone-number {
+					margin-right: .75rem;
+				}
+				.tty {
+					white-space: nowrap;
+				}
+				strong {
+					display: block;
+					margin-top: 1rem;
+					text-transform: uppercase;
+				}
+			}
+			.btn {
+				background-color: #005172;
+				font-size: 0.75rem;
+				font-weight: bold;
+				color: #fff;
+				transition-duration: 0s;
+				&:hover, &:focus {
+					background-color: #b26200;
+				}
+			}
+		}
+	}
+}
+
+.card-loc-list {
+	@include mq(md) {
+		.loc-details {
+			background-color: #fff;
+			overflow-y: scroll;
+			.location {
+				padding: 0.625rem 0.9375rem;
+			}
+			h2 {
+				color: #005172;
+				font-size: 1.25rem;
+			}
+			.badge {
+				background-color: #b26200;
+				color: #fff;
+				font-size: 1rem;
+				border-radius: 50%;
+				font-weight: normal;
+				width: 1.75rem;
+				height: 1.75rem;
+				padding: .4rem .35rem .4rem .45rem;
+			}
+			strong {
+				text-transform: uppercase;
+			}
+			.address, .phone, .hours, .parking {
+				margin-top: .75rem;
+				font-size: 0.875rem;
+				> div {
+					line-height: 1rem;
+				}
+			}
+			.btn {
+				margin-top: 1rem;
+				border-radius: 0;
+				border-width: 0;
+				background-color: #005172;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 0.75rem;
+				padding: 0.625rem 0.9375rem;
+				transition-duration: 0s;
+				&:hover, &:focus {
+					background-color: #e37c00;
+				}
+			}
+			hr {
+				width: calc(100% - 2rem);
+				border-color: #d7d7d7;
+			}
+		}
+	}
+}
