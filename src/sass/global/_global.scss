@@ -15,6 +15,13 @@ body {
 	}
 }
 
+a {
+	outline: none;
+	&:hover, &:focus {
+		outline: none;
+	}
+}
+
 nav.navbar {
 	padding-bottom: 0;
 	.collapse, .collapsing {
@@ -94,6 +101,7 @@ nav.navbar {
 					padding-right: 0;
 					margin: 0 .5rem;
 					padding-bottom: 0.4375rem;
+					font-size: 0.875rem;
 					&:hover, &:focus {
 						color: #333;
 						border-color: #e37c00;
@@ -198,6 +206,23 @@ nav.navbar {
 			background-color: #005172;
 			padding: 0.3125rem 0.9375rem;
 			font-size: 1.625rem;
+		}
+	}
+}
+
+#card-group-wrapper {
+	margin-top: 1.063em;
+	@include mq(md) {
+		background-color: #f6f6f6;
+		margin-top: 0;
+	}
+	.card {
+		padding-left: 0;
+		padding-right: 0;
+		border-radius: 0;
+		border-width: 0;
+		@include mq(md) {
+			background-color: transparent;
 		}
 	}
 }

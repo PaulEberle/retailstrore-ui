@@ -61,19 +61,8 @@
 	}
 }
 
-#card-group-table-wrapper {
-	margin-top: 1.063em;
-	@include mq(md) {
-		background-color: #f6f6f6;
-		margin-top: 0;
-	}
+#card-group-wrapper {
 	.card {
-		padding-left: 0;
-		padding-right: 0;
-		border-radius: 0;
-		@include mq(md) {
-			background-color: transparent;
-		}
 		&.card-table {
 			.card-body {
 				padding: 0;
@@ -85,7 +74,6 @@
 		}
 	}
 	.card-filter {
-		border-width: 0;
 		color: #005172;
 		.h5 {
 			font-size: 1.188rem;
@@ -104,9 +92,6 @@
 		}
 	}
 	.card-table {
-		@include mq(md) {
-			border-width: 0;
-		}
 		nav {
 			margin-top: 0.9375rem;
 		}
@@ -117,7 +102,7 @@
 				border-width: 0;
 				color: #333;
 				padding: .594rem .625rem;
-				&:hover {
+				&:hover, &:focus {
 					background-color: #b26200;
 					color: #fff;
 				}
