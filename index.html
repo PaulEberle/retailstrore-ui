@@ -23,7 +23,7 @@
 							<a class="nav-link" href="./classes.html">Classes</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#appointments">Appointments</a>
+							<a class="nav-link" href="#appointments" data-toggle="modal" data-target="#appointmentModal">Appointments</a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="./contact.html" role="button" aria-haspopup="true" aria-expanded="false">Hours and Locations</a>
@@ -34,7 +34,7 @@
 							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#subscribe">Subscribe</a>
+							<a class="nav-link" href="#subscribe" data-toggle="modal" data-target="#subscribeModal">Subscribe</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="https://www.bluecrossmn.com" target="_blank">bluecrossmn.com</a>
@@ -58,7 +58,7 @@
 								<li>Claims and benefits</li>
 								<li>Classes</li>
 							</ul>
-							<p class="card-text"><a href="#subscribe">Subscribe</a> to get updates on classes, events and more.</p>
+							<p class="card-text"><a href="#subscribe" data-toggle="modal" data-target="#subscribeModal">Subscribe</a> to get updates on classes, events and more.</p>
 						</div>
 					</div>
 
@@ -83,9 +83,425 @@
 			</div>
 		</div>
 
+		<!-- Modals -->
+
+		<div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<form id="subscribeForm">
+						<div class="modal-header">
+							<div class="modal-title">Get updates on retail happenings and classes</div>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<p class="text-center">Fields marked with * are required.</p>
+							<form class="row justify-content-center">
+								<div class="col-12 col-md-10">
+									<div class="form-group row">
+										<label for="firstName" class="col-md-3 col-form-label">* First Name</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="firstName">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="lastName" class="col-md-3 col-form-label">* Last Name</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="lastName">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="email" class="col-md-3 col-form-label">* Email Address</label>
+										<div class="col-md-9">
+											<input type="email" class="form-control" id="email">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="zipCode" class="col-md-3 col-form-label">Zip Code</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="zipCode" maxlength="5">
+										</div>
+									</div>
+								</div>
+							</form>
+							<p>By providing this information, you give permission to be contacted about Blue Cross and Blue Shield of Minnesota news, products, and other information via email. You may unsubscribe from these communications at any time.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary d-block w-100">Send Me Updates</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="appointmentModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="modal-title">Schedule an Appointment</div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<form id="mobileForm">
+						<div class="modal-body d-md-none" id="mobileForm1">
+							<p class="select-location"><strong>Select Location</strong></p>
+							<div class="btn-group d-block" data-toggle="buttons">
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="location" id="edina" value="edina">
+									<p class="loc-name">Edina Retail Center</p>
+									<p class="addr-ln-1">Yorkdale Shoppes</p>
+									<p class="addr-ln-2">6807 York Avenue South</p>
+									<p class="addr-ln-3">Edina, MN 55435</p>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="location" id="roseville" value="roseville">
+									<p class="loc-name">Roseville Retail Center</p>
+									<p class="addr-ln-1">Crossroads of Roseville</p>
+									<p class="addr-ln-2">1647B County Road B2 West</p>
+									<p class="addr-ln-3">Roseville, MN 55113</p>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="location" id="duluth" value="duluth">
+									<p class="loc-name">Duluth Retail Center</p>
+									<p class="addr-ln-1">425 West Superior Street</p>
+									<p class="addr-ln-2">Suite 1060</p>
+									<p class="addr-ln-3">Duluth, MN 55802</p>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="location" id="online" value="online">
+									<strong>Online Meeting</strong>
+								</label>
+							</div>
+						</div>
+						<div class="modal-body d-none" id="mobileForm2">
+							<p class="select-location"><strong>Select Reason for Appointment</strong></p>
+							<div class="btn-group d-block" data-toggle="buttons">
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="reason" id="sales" value="sales">
+									<strong>Sales</strong>
+								</label>
+								<p>Talk to a licensed sales representative about choosing or comparing new health plan options</p>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="reason" id="service" value="service">
+									<strong>Online Meeting</strong>
+								</label>
+								<p>Meet with a customer advocate to discuss your current coverage, including benefits, payments, claims or billing questions</p>
+							</div>
+							<p class="btn btn-secondary d-block text-center">Back</p>
+						</div>
+						<div class="modal-body d-none" id="mobileForm3">
+							<p class="select-location"><strong>Available Dates</strong></p>
+							<div class="btn-group d-block" data-toggle="buttons">
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="date" id="sales" value="20170929">
+									<strong>Friday, September 29</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="date" id="service" value="20170930">
+									<strong>Saturday, September 30</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="date" id="service" value="20180425">
+									<strong>Friday, April 25</strong>
+								</label>
+							</div>
+							<p class="btn btn-secondary d-block text-center">Back</p>
+						</div>
+						<div class="modal-body d-none" id="mobileForm4">
+							<p class="select-location"><strong>Available Times for September 30</strong></p>
+							<div class="btn-group d-block" data-toggle="buttons">
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>8:00 a.m - 9:00 a.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>9:00 a.m - 10:00 a.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>10:00 a.m - 11:00 a.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>11:00 a.m - 12:00 p.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>12:00 p.m - 1:00 p.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>1:00 p.m - 2:00 p.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>2:00 p.m - 3:00 p.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>3:00 p.m - 4:00 p.m.</strong>
+								</label>
+								<label class="btn btn-secondary d-block">
+									<input type="radio" name="time" id="sales" value="0800-0900">
+									<strong>4:00 p.m - 5:00 p.m.</strong>
+								</label>
+							</div>
+							<p class="btn btn-secondary d-block text-center">Back</p>
+						</div>
+						<div class="modal-body d-none" id="mobileForm5">
+							<p class="text-center">Fields marked with * are required.</p>
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10">
+									<div class="form-group row">
+										<label for="firstName" class="col-md-3 col-form-label">First Name *</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="firstName">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="lastName" class="col-md-3 col-form-label">Last Name *</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="lastName">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="over65" class="col-md-3 col-form-label">* Over 65?</label>
+										<div class="form-check form-check-inline">
+											<label class="form-check-label">
+												<input class="form-check-input" type="radio" name="over65" id="over65" value="yes"> Yes
+											</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<label class="form-check-label">
+												<input class="form-check-input" type="radio" name="over65" id="over65" value="no"> No
+											</label>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="email" class="col-md-3 col-form-label">Email Address</label>
+										<div class="col-md-9">
+											<input type="email" class="form-control" id="email">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="phone" class="col-md-3 col-form-label">Phone Number *</label>
+										<div class="col-md-9">
+											<input type="tel" class="form-control" id="phone">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="zipCode" class="col-md-3 col-form-label">Zip Code *</label>
+										<div class="col-md-9">
+											<input type="text" class="form-control" id="zipCode" maxlength="5">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="apptLoc">How did you hear about us? *</label>
+										<select class="form-control" id="apptLoc">
+											<option>1st Available</option>
+											<option>BCBSMN Employee</option>
+											<option>BCBSMN Website</option>
+											<option>Direct Mail</option>
+											<option>Friend</option>
+											<option>Internet/Web Search</option>
+											<option>Passing By</option>
+											<option>Print Advertisement</option>
+											<option>Radio</option>
+											<option>Rep - Amy B.</option>
+											<option>Rep - Brad N.</option>
+											<option>Rep - Caitlin N.</option>
+											<option>Rep - Courtney O.</option>
+											<option>Rep - Edward A.</option>
+											<option>Rep - Emily B.</option>
+											<option>Rep - Jake L.</option>
+											<option>Rep - Jeremy H.</option>
+											<option>Rep - John D.</option>
+											<option>Rep - Kerry M.</option>
+											<option>Rep - Lauren M.</option>
+											<option>Rep - Lisa M.</option>
+											<option>Rep - Marc M.</option>
+											<option>Rep - Nelson S.</option>
+											<option>Rep - Omar F.</option>
+											<option>Rep - Renee B.</option>
+											<option>Rep - Tammy K.</option>
+											<option>Return Visit</option>
+											<option selected="selected">- Select One -</option>
+											<option>Seminar</option>
+											<option>Social Media</option>
+											<option>Television</option>
+											<option>Other</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary d-block">Schedule</button>
+							<p class="btn btn-secondary d-block text-center">Back</p>
+						</div>
+					</form>
+					<form class="row justify-content-center" id="desktopForm">
+						<div class="modal-body d-none d-md-block" id="desktopForm1">
+							<div class="col-12">
+								<div class="form-group">
+									<label for="apptLoc" class="sr-only">Location</label>
+									<select class="form-control" id="apptLoc">
+										<option>- Make a Selection -</option>
+										<option>Edina Retail Center</option>
+										<option>Roseville Retail Center</option>
+										<option>Duluth Retail Center</option>
+										<option>Online Meeting</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="apptReason" class="sr-only">Reason</label>
+									<select class="form-control" id="apptReason">
+										<option>- Select Reason for Appointment -</option>
+										<option>Sales</option>
+										<option>Service</option>
+									</select>
+								</div>
+								<p><strong>Sales:</strong> Talk to a licensed sales representative about choosing or comparing new health plan options</p>
+								<p><strong>Service:</strong> Meet with a customer advocate to discuss your current coverage, including benefits, payments, claims or billing questions</p>
+								<div id="datepicker"></div>
+								<div class="form-group row hidden">
+									<label for="apptDate" class="col-md-3 col-form-label">Date</label>
+									<div class="col-md-9">
+										<input type="text" class="form-control" id="apptDate">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="apptReason" class="sr-only">Time</label>
+									<select class="form-control" id="apptReason">
+										<option>- Select Available Time -</option>
+										<option>8:00 a.m. - 9:00 a.m.</option>
+										<option>9:00 a.m. - 10:00 a.m.</option>
+										<option>10:00 a.m. - 11:00 a.m.</option>
+										<option>11:00 a.m. - 12:00 p.m.</option>
+										<option>12:00 p.m. - 1:00 p.m.</option>
+										<option>1:00 p.m. - 2:00 p.m.</option>
+										<option>2:00 p.m. - 3:00 p.m.</option>
+										<option>3:00 p.m. - 4:00 p.m.</option>
+										<option>4:00 p.m. - 5:00 p.m.</option>
+									</select>
+								</div>
+								<div class="form-group d-none d-md-block" id="desktopForm1Submit">
+									<button type="button" class="btn btn-primary d-block w-100">Continue</button>
+								</div>
+							</div>
+						</div>
+						<div class="modal-body d-none" id="desktopForm2">
+							<div class="col-12">
+								<div class="alert alert-secondary alert-confirmation" role="alert">
+									<p class="conf-title">Sales Appointment</p>
+									<p><span class="date">Friday, September 29, 2017</span>, <span class="time">8:00 a.m. - 9:00 a.m.</span></p>
+									<p class="location">Blue Cross and Blue Shield of Minnesota - Edina Retail Center</p>
+									<p class="addrLn1">Yorkdale Shoppes</p>
+									<p class="addrLn2">6807 York Avenue South</p>
+									<p class="addrLn3">Edina, MN 55435</p>
+								</div>
+								<p class="text-center">Fields marked with * are required.</p>
+								<div class="row justify-content-center">
+									<div class="col-12 col-md-10">
+										<div class="form-group row">
+											<label for="firstName" class="col-md-3 col-form-label">* First Name</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="firstName">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="lastName" class="col-md-3 col-form-label">* Last Name</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="lastName">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="over65" class="col-md-3 col-form-label">* Over 65?</label>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label">
+													<input class="form-check-input" type="radio" name="over65" id="over65" value="yes"> Yes
+												</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<label class="form-check-label">
+													<input class="form-check-input" type="radio" name="over65" id="over65" value="no"> No
+												</label>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="email" class="col-md-3 col-form-label">Email Address</label>
+											<div class="col-md-9">
+												<input type="email" class="form-control" id="email">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="phone" class="col-md-3 col-form-label">* Phone Number</label>
+											<div class="col-md-9">
+												<input type="tel" class="form-control" id="phone">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="zipCode" class="col-md-3 col-form-label">* Zip Code</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="zipCode" maxlength="5">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="apptReason" class="col-md-3 col-form-label">* Referred By</label>
+											<div class="col-md-9">
+												<select class="form-control" id="apptReason">
+													<option>1st Available</option>
+													<option>BCBSMN Employee</option>
+													<option>BCBSMN Website</option>
+													<option>Direct Mail</option>
+													<option>Friend</option>
+													<option>Internet/Web Search</option>
+													<option>Passing By</option>
+													<option>Print Advertisement</option>
+													<option>Radio</option>
+													<option>Rep - Amy B.</option>
+													<option>Rep - Brad N.</option>
+													<option>Rep - Caitlin N.</option>
+													<option>Rep - Courtney O.</option>
+													<option>Rep - Edward A.</option>
+													<option>Rep - Emily B.</option>
+													<option>Rep - Jake L.</option>
+													<option>Rep - Jeremy H.</option>
+													<option>Rep - John D.</option>
+													<option>Rep - Kerry M.</option>
+													<option>Rep - Lauren M.</option>
+													<option>Rep - Lisa M.</option>
+													<option>Rep - Marc M.</option>
+													<option>Rep - Nelson S.</option>
+													<option>Rep - Omar F.</option>
+													<option>Rep - Renee B.</option>
+													<option>Rep - Tammy K.</option>
+													<option>Return Visit</option>
+													<option selected="selected">- Select One -</option>
+													<option>Seminar</option>
+													<option>Social Media</option>
+													<option>Television</option>
+													<option>Other</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group d-none" id="desktopForm2Submit">
+									<button type="submit" class="btn btn-primary d-block w-100">Schedule</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
 		<script src='./assets/js/jquery.min.js'></script>
 		<script src='./assets/js/popper.min.js'></script>
 		<script src='./assets/js/bootstrap.min.js'></script>
+		<script src='./assets/js/bootstrap-datepicker.min.js'></script>
 		<script src='./assets/js/scripts.min.js'></script>
 	</body>
 </html>

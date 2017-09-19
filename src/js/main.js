@@ -91,6 +91,43 @@ $(function(){
 			$('#map_wrapper_specific').height(cardMapWidth-20);
 		}
 
+		// Initiate Bootstrap Date Picker
+		$("#datepicker")
+			.datepicker({
+				multidate: false,
+				todayHighlight: true,
+				// daysOfWeekDisabled: [0, 6], // Disable weekends
+				datesDisabled: [ // This is just for example/dummy purposes
+					"09/01/2017",
+					"09/02/2017",
+					"09/03/2017",
+					"09/04/2017",
+					"09/05/2017",
+					"09/06/2017",
+					"09/07/2017",
+					"09/08/2017",
+					"09/09/2017",
+					"09/10/2017",
+					"09/11/2017",
+					"09/12/2017",
+					"09/14/2017",
+					"09/15/2017",
+					"09/16/2017",
+					"09/17/2017",
+					"09/19/2017",
+					"09/20/2017",
+					"09/23/2017",
+					"09/24/2017",
+					"09/25/2017",
+					"09/27/2017",
+					"09/29/2017",
+					"09/21/2017"
+				]
+			})
+			.on("changeDate", function(e) {
+				$("#apptDate").val(e.format("yyyy-mm-dd"));
+			});
+
 	} else { // mobile (767px & down)
 		// Do nothing
 	}
@@ -132,6 +169,57 @@ $(function(){
 	      2 : { sorter: 'data' }
 	    },
 	  });
+
+	/*
+	 * Modals
+	 */
+	// Desktop - Form #1 to Form #2
+	$('#desktopForm1Submit').click(function(){
+		$('#desktopForm1').css('cssText', 'display: none !important');
+		$('#desktopForm2').css('cssText', 'display: block !important');
+		$('#desktopForm1Submit').css('cssText', 'display: none !important');
+		$('#desktopForm2Submit').css('cssText', 'display: block !important');
+	});
+	// Mobile - Form #1 to Form #2
+	$('#mobileForm1 label.btn-secondary').click(function(){
+		$('#mobileForm1').css('cssText', 'display: none !important');
+		$('#mobileForm2').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #2 to Form #1
+	$('#mobileForm2 p.btn-secondary').click(function(){
+		$('#mobileForm2').css('cssText', 'display: none !important');
+		$('#mobileForm1').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #2 to Form #3
+	$('#mobileForm2 label.btn-secondary').click(function(){
+		$('#mobileForm2').css('cssText', 'display: none !important');
+		$('#mobileForm3').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #3 to Form #2
+	$('#mobileForm3 p.btn-secondary').click(function(){
+		$('#mobileForm3').css('cssText', 'display: none !important');
+		$('#mobileForm2').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #3 to Form #4
+	$('#mobileForm3 label.btn-secondary').click(function(){
+		$('#mobileForm3').css('cssText', 'display: none !important');
+		$('#mobileForm4').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #4 to Form #3
+	$('#mobileForm4 p.btn-secondary').click(function(){
+		$('#mobileForm4').css('cssText', 'display: none !important');
+		$('#mobileForm3').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #4 to Form #5
+	$('#mobileForm4 label.btn-secondary').click(function(){
+		$('#mobileForm4').css('cssText', 'display: none !important');
+		$('#mobileForm5').css('cssText', 'display: block !important');
+	});
+	// Desktop - Form #5 to Form #4
+	$('#mobileForm5 p.btn-secondary').click(function(){
+		$('#mobileForm5').css('cssText', 'display: none !important');
+		$('#mobileForm4').css('cssText', 'display: block !important');
+	});
 
 	/*
 	 * Footer

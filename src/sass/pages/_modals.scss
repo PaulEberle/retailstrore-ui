@@ -1,0 +1,212 @@
+.modal-dialog {
+	margin-top: 15vh;
+	@include mq(sm) {
+		max-width: 36.5625rem;
+	}
+}
+.modal-content {
+	border-radius: 0;
+	border-width: 0;
+	overflow-x: hidden;
+	.modal-header {
+		background-color: #003359;
+		color: #fff;
+		padding: .3125rem .3125rem .3125rem 1rem;
+		border-bottom-width: 0;
+		@include mq(md) {
+			background-color: #005172;
+		}
+		.modal-title {
+			font-size: 1.25rem;
+		}
+		.close {
+			color: #fff;
+			text-shadow: none;
+			opacity: 1;
+			cursor: pointer;
+			padding: .1875rem .5rem;
+		}
+	}
+	.modal-body {
+		padding-bottom: 0;
+		.form-group {
+			margin-bottom: 0.3125rem;
+			.btn {
+				border-radius: 0;
+				border-width: 0;
+				background-color: #005172;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 0.75rem;
+				padding: 0.625rem 0.9375rem;
+				transition-duration: 0s;
+				&:hover, &:focus {
+					background-color: #e37c00;
+				}
+			}
+		}
+		label {
+			font-weight: bold;
+			padding-bottom: 0;
+			@include mq(md) {
+				text-align: right;
+				margin-left: 1rem;
+				margin-right: -1rem;
+				padding-bottom: calc(.5rem - 1px * 2);
+				white-space: nowrap;
+			}
+		}
+		input.form-control, select.form-control {
+			background-color: #e2e1dd;
+			border: 1px solid #cacac8;
+			border-radius: 0;
+			font-size: 0.8125rem;
+			padding: .3125rem .625rem;
+		}
+	}
+	.modal-footer {
+		border-top-width: 0;
+		padding-top: 0;
+		.btn {
+			border-radius: 0;
+			border-width: 0;
+			background-color: #005172;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.75rem;
+			padding: 0.625rem 0.9375rem;
+			transition-duration: 0s;
+			&:hover, &:focus {
+				background-color: #e37c00;
+			}
+		}
+	}
+}
+
+#appointmentModal {
+	p, .form-group {
+		margin-bottom: .5rem;
+	}
+	.modal-content {
+		.modal-body {
+			.alert.alert-secondary {
+				border-radius: 0;
+				border-width: 0;
+				margin-bottom: .5rem;
+				p {
+					font-size: 0.8125rem;
+					margin-bottom: -.1875rem;
+				}
+				.conf-title {
+					color: #003359;
+					font-size: 1rem;
+					font-weight: bold;
+				}
+			}
+			select.form-control {
+				font-size: 0.8125rem;
+				border-radius: 0;
+				padding: .3125rem;
+				height: auto;
+			}
+			.form-check {
+				margin-bottom: 0;
+				.form-check-label {
+					font-size: 0.875rem;
+					font-weight: normal;
+				}
+				.form-check-input {
+					margin-top: .5rem;
+				}
+			}
+			#desktopForm2Submit {
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+		#mobileForm .modal-body {
+			padding-bottom: 1rem;
+			.select-location {
+				font-size: 0.8125rem;
+			}
+			.btn-group + p.btn-secondary {
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #333;
+				margin-top: 1.5rem;
+				font-size: 0.875rem;
+				&:hover, &:focus {
+					color: #fff;
+				}
+				&.active {
+					background-color: #E2E1DD;
+					color: #333;
+				}
+			}
+			label {
+				+ .form-check {
+					padding-left: 1rem;
+				}
+			}
+			.btn-secondary {
+				border-radius: 0;
+				border-width: 0;
+				background-color: #E2E1DD;
+				color: #06c;
+				text-align: left;
+				font-size: 0.8125rem;
+				transition-duration: 0s;
+				padding: .5rem .75rem;
+				font-weight: normal;
+				&:hover, &:focus, &.active, &.focus {
+					background-color: #b26200;
+					color: #fff;
+					box-shadow: none;
+					border-width: 0;
+					strong, .loc-name {
+						color: #fff;
+					}
+				}
+				+ .btn-secondary {
+					margin-top: .25rem;
+				}
+				p {
+					margin-bottom: 0;
+				}
+				strong, .loc-name {
+					color: #333;
+					font-size: 0.875rem;
+					font-weight: bold;
+				}
+			}
+			button[type='submit'] {
+				width: 100%;
+				border-radius: 0;
+				border-width: 0;
+				font-size: 0.875rem;
+				background-color: #005172;
+				font-size: 0.75rem;
+				font-weight: bold;
+				color: #fff;
+				transition-duration: 0s;
+				text-transform: uppercase;
+				margin-top: 1rem;
+				margin-bottom: .5rem;
+				&:hover, &:focus {
+					background-color: #b26200;
+				}
+			}
+		}
+		#desktopForm2 {
+			padding-bottom: 1rem;
+			.form-group {
+				margin-bottom: .25rem;
+			}
+		}
+		.modal-footer {
+			padding-top: .5rem;
+		}
+	}
+}
+
+@import "bootstrap-datepicker";

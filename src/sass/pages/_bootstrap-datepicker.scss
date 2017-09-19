@@ -1,0 +1,85 @@
+#datepicker {
+  table {
+    width: 100%;
+    font-weight: bold;
+    font-size: 0.8125rem;
+    margin-bottom: 0.625rem;
+  }
+  th, td {
+    padding: .3125rem 0;
+  }
+  thead {
+    tr {
+      background-color: #005172;
+      color: #fff;
+      border-left: 1px solid #e2e1dd;
+      border-right: 1px solid #e2e1dd;
+      text-transform: uppercase;
+      &:last-child {
+        background-color: #e2e1dd;
+        color: #005172;
+      }
+    }
+    th {
+      text-align: center;
+      width: calc(100% / 7);
+      &.datepicker-switch {
+        cursor: initial;
+        pointer-events: none;
+        cursor: default;
+      }
+      &.prev, &.next {
+        cursor: pointer;
+      }
+      &.prev, &.next {
+        color: transparent;
+      }
+      &.prev:before {
+        font-family: FontAwesome;
+        color: #fff;
+        content: '\f0d9';
+      }
+      &.next:after {
+        font-family: FontAwesome;
+        color: #fff;
+        content: '\f0da';
+      }
+    }
+  }
+  tbody {
+    tr {
+      border-left: 1px solid #e2e1dd;
+      border-right: 1px solid #e2e1dd;
+      &:last-child {
+      border-bottom: 1px solid #e2e1dd;
+      }
+    }
+    td {
+      text-align: center;
+      cursor: pointer;
+      &.day {
+        background-color: #cacac8;
+        &:hover, &:focus {
+          background-color: #b26200;
+          color: #fff;
+        }
+      }
+      &.active {
+        background-color: #b26200;
+        color: #fff;
+      }
+      &.old, &.new, &.disabled.disabled-date {
+        cursor: initial;
+        pointer-events: none;
+        cursor: default;
+        background-color: #fff;
+      }
+      &.old, &.new {
+        color: #fff;
+      }
+    }
+  }
+  + .hidden {
+  	display: none;
+  }
+}

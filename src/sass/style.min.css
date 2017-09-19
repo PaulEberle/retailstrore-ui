@@ -11248,8 +11248,8 @@ a.text-dark:focus, a.text-dark:hover {
  */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("./fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("./fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("./fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("./fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("./fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("./fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -12206,4 +12206,357 @@ nav.navbar + div.alert-home {
 #map_wrapper_specific iframe {
   width: 100%;
   height: 100%;
+}
+
+.modal-dialog {
+  margin-top: 15vh;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 36.5625rem;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+  border-width: 0;
+  overflow-x: hidden;
+}
+
+.modal-content .modal-header {
+  background-color: #003359;
+  color: #fff;
+  padding: .3125rem .3125rem .3125rem 1rem;
+  border-bottom-width: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-content .modal-header {
+    background-color: #005172;
+  }
+}
+
+.modal-content .modal-header .modal-title {
+  font-size: 1.25rem;
+}
+
+.modal-content .modal-header .close {
+  color: #fff;
+  text-shadow: none;
+  opacity: 1;
+  cursor: pointer;
+  padding: .1875rem .5rem;
+}
+
+.modal-content .modal-body {
+  padding-bottom: 0;
+}
+
+.modal-content .modal-body .form-group {
+  margin-bottom: 0.3125rem;
+}
+
+.modal-content .modal-body .form-group .btn {
+  border-radius: 0;
+  border-width: 0;
+  background-color: #005172;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.625rem 0.9375rem;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.modal-content .modal-body .form-group .btn:hover, .modal-content .modal-body .form-group .btn:focus {
+  background-color: #e37c00;
+}
+
+.modal-content .modal-body label {
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-content .modal-body label {
+    text-align: right;
+    margin-left: 1rem;
+    margin-right: -1rem;
+    padding-bottom: calc(.5rem - 1px * 2);
+    white-space: nowrap;
+  }
+}
+
+.modal-content .modal-body input.form-control, .modal-content .modal-body select.form-control {
+  background-color: #e2e1dd;
+  border: 1px solid #cacac8;
+  border-radius: 0;
+  font-size: 0.8125rem;
+  padding: .3125rem .625rem;
+}
+
+.modal-content .modal-footer {
+  border-top-width: 0;
+  padding-top: 0;
+}
+
+.modal-content .modal-footer .btn {
+  border-radius: 0;
+  border-width: 0;
+  background-color: #005172;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.625rem 0.9375rem;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.modal-content .modal-footer .btn:hover, .modal-content .modal-footer .btn:focus {
+  background-color: #e37c00;
+}
+
+#appointmentModal p, #appointmentModal .form-group {
+  margin-bottom: .5rem;
+}
+
+#appointmentModal .modal-content .modal-body .alert.alert-secondary {
+  border-radius: 0;
+  border-width: 0;
+  margin-bottom: .5rem;
+}
+
+#appointmentModal .modal-content .modal-body .alert.alert-secondary p {
+  font-size: 0.8125rem;
+  margin-bottom: -.1875rem;
+}
+
+#appointmentModal .modal-content .modal-body .alert.alert-secondary .conf-title {
+  color: #003359;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#appointmentModal .modal-content .modal-body select.form-control {
+  font-size: 0.8125rem;
+  border-radius: 0;
+  padding: .3125rem;
+  height: auto;
+}
+
+#appointmentModal .modal-content .modal-body .form-check {
+  margin-bottom: 0;
+}
+
+#appointmentModal .modal-content .modal-body .form-check .form-check-label {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+#appointmentModal .modal-content .modal-body .form-check .form-check-input {
+  margin-top: .5rem;
+}
+
+#appointmentModal .modal-content .modal-body #desktopForm2Submit {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body {
+  padding-bottom: 1rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .select-location {
+  font-size: 0.8125rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-group + p.btn-secondary {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-group + p.btn-secondary:hover, #appointmentModal .modal-content #mobileForm .modal-body .btn-group + p.btn-secondary:focus {
+  color: #fff;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-group + p.btn-secondary.active {
+  background-color: #E2E1DD;
+  color: #333;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body label + .form-check {
+  padding-left: 1rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-secondary {
+  border-radius: 0;
+  border-width: 0;
+  background-color: #E2E1DD;
+  color: #06c;
+  text-align: left;
+  font-size: 0.8125rem;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  padding: .5rem .75rem;
+  font-weight: normal;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-secondary:hover, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary:focus, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary.active, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary.focus {
+  background-color: #b26200;
+  color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-width: 0;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-secondary:hover strong, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary:hover .loc-name, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary:focus strong, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary:focus .loc-name, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary.active strong, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary.active .loc-name, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary.focus strong, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary.focus .loc-name {
+  color: #fff;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-secondary + .btn-secondary {
+  margin-top: .25rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-secondary p {
+  margin-bottom: 0;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body .btn-secondary strong, #appointmentModal .modal-content #mobileForm .modal-body .btn-secondary .loc-name {
+  color: #333;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body button[type='submit'] {
+  width: 100%;
+  border-radius: 0;
+  border-width: 0;
+  font-size: 0.875rem;
+  background-color: #005172;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+#appointmentModal .modal-content #mobileForm .modal-body button[type='submit']:hover, #appointmentModal .modal-content #mobileForm .modal-body button[type='submit']:focus {
+  background-color: #b26200;
+}
+
+#appointmentModal .modal-content #desktopForm2 {
+  padding-bottom: 1rem;
+}
+
+#appointmentModal .modal-content #desktopForm2 .form-group {
+  margin-bottom: .25rem;
+}
+
+#appointmentModal .modal-content .modal-footer {
+  padding-top: .5rem;
+}
+
+#datepicker table {
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  margin-bottom: 0.625rem;
+}
+
+#datepicker th, #datepicker td {
+  padding: .3125rem 0;
+}
+
+#datepicker thead tr {
+  background-color: #005172;
+  color: #fff;
+  border-left: 1px solid #e2e1dd;
+  border-right: 1px solid #e2e1dd;
+  text-transform: uppercase;
+}
+
+#datepicker thead tr:last-child {
+  background-color: #e2e1dd;
+  color: #005172;
+}
+
+#datepicker thead th {
+  text-align: center;
+  width: calc(100% / 7);
+}
+
+#datepicker thead th.datepicker-switch {
+  cursor: initial;
+  pointer-events: none;
+  cursor: default;
+}
+
+#datepicker thead th.prev, #datepicker thead th.next {
+  cursor: pointer;
+}
+
+#datepicker thead th.prev, #datepicker thead th.next {
+  color: transparent;
+}
+
+#datepicker thead th.prev:before {
+  font-family: FontAwesome;
+  color: #fff;
+  content: '\f0d9';
+}
+
+#datepicker thead th.next:after {
+  font-family: FontAwesome;
+  color: #fff;
+  content: '\f0da';
+}
+
+#datepicker tbody tr {
+  border-left: 1px solid #e2e1dd;
+  border-right: 1px solid #e2e1dd;
+}
+
+#datepicker tbody tr:last-child {
+  border-bottom: 1px solid #e2e1dd;
+}
+
+#datepicker tbody td {
+  text-align: center;
+  cursor: pointer;
+}
+
+#datepicker tbody td.day {
+  background-color: #cacac8;
+}
+
+#datepicker tbody td.day:hover, #datepicker tbody td.day:focus {
+  background-color: #b26200;
+  color: #fff;
+}
+
+#datepicker tbody td.active {
+  background-color: #b26200;
+  color: #fff;
+}
+
+#datepicker tbody td.old, #datepicker tbody td.new, #datepicker tbody td.disabled.disabled-date {
+  cursor: initial;
+  pointer-events: none;
+  cursor: default;
+  background-color: #fff;
+}
+
+#datepicker tbody td.old, #datepicker tbody td.new {
+  color: #fff;
+}
+
+#datepicker + .hidden {
+  display: none;
 }
