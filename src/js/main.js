@@ -92,41 +92,43 @@ $(function(){
 		}
 
 		// Initiate Bootstrap Date Picker
-		$("#datepicker")
-			.datepicker({
-				multidate: false,
-				todayHighlight: true,
-				// daysOfWeekDisabled: [0, 6], // Disable weekends
-				datesDisabled: [ // This is just for example/dummy purposes
-					"09/01/2017",
-					"09/02/2017",
-					"09/03/2017",
-					"09/04/2017",
-					"09/05/2017",
-					"09/06/2017",
-					"09/07/2017",
-					"09/08/2017",
-					"09/09/2017",
-					"09/10/2017",
-					"09/11/2017",
-					"09/12/2017",
-					"09/14/2017",
-					"09/15/2017",
-					"09/16/2017",
-					"09/17/2017",
-					"09/19/2017",
-					"09/20/2017",
-					"09/23/2017",
-					"09/24/2017",
-					"09/25/2017",
-					"09/27/2017",
-					"09/29/2017",
-					"09/21/2017"
-				]
-			})
-			.on("changeDate", function(e) {
-				$("#apptDate").val(e.format("yyyy-mm-dd"));
-			});
+		if ( $( "#table-classes" ).length ) {
+			$("#datepicker")
+				.datepicker({
+					multidate: false,
+					todayHighlight: true,
+					// daysOfWeekDisabled: [0, 6], // Disable weekends
+					datesDisabled: [ // This is just for example/dummy purposes
+						"09/01/2017",
+						"09/02/2017",
+						"09/03/2017",
+						"09/04/2017",
+						"09/05/2017",
+						"09/06/2017",
+						"09/07/2017",
+						"09/08/2017",
+						"09/09/2017",
+						"09/10/2017",
+						"09/11/2017",
+						"09/12/2017",
+						"09/14/2017",
+						"09/15/2017",
+						"09/16/2017",
+						"09/17/2017",
+						"09/19/2017",
+						"09/20/2017",
+						"09/23/2017",
+						"09/24/2017",
+						"09/25/2017",
+						"09/27/2017",
+						"09/29/2017",
+						"09/21/2017"
+					]
+				})
+				.on("changeDate", function(e) {
+					$("#apptDate").val(e.format("yyyy-mm-dd"));
+				});
+			}
 
 	} else { // mobile (767px & down)
 		// Do nothing
