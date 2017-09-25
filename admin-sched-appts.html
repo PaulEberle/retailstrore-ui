@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Manage Scheduled Appointments - Admin Tool | Retail Centers</title>
+		<link rel='stylesheet' href='./assets/css/style.min.css'>
+		<link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico"/>
+	</head>
+	<body id="admin">
+
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="./admin-sched-appts.html">
+				<img src="./assets/imgs/retail_logo.png" alt="Blue Cross MN Logo">
+			</a>
+			<span class="navbar-text hidden-xs">Welcome, <span class="a0-num">A0####</span>!</span>
+		</nav>
+
+		<div class="container-fluid">
+
+			<div class="row">
+				<h1 class="sr-only">View Scheduled Appointments</h1>
+				<div class="col-md-6 col-lg-3 order-2 order-lg-1">
+					<div class="card card-admin-nav">
+						<div class="card-header">
+							<i class="fa fa-leaf" aria-hidden="true"></i>
+							Menu
+						</div>
+						<div class="card-body">
+							<div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+								<a href="./admin-sched-appts.html" class="btn btn-secondary active">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									View Scheduled Appointments
+								</a>
+								<a href="./admin-sched-appts.html" class="btn btn-secondary">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+									Set Appointment Availability
+								</a>
+								<a href="./admin-sched-appts.html" class="btn btn-secondary">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									View Events
+								</a>
+								<a href="./admin-check-in.html" class="btn btn-secondary">
+									<i class="fa fa-check" aria-hidden="true"></i>
+									Check In
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 order-1 order-lg-2">
+					<div class="card card-admin-body">
+						<div class="card-header">Manage Events</div>
+						<div class="card-body">
+							<form class="form-inline" id="form-sched-appts">
+								<div class="form-row">
+									<div class="col-auto form-group">
+										<label for="date">Date</label>
+										<input type="date" class="form-control" id="date">
+									</div>
+									<div class="col-auto form-group">
+										<label for="location">Location</label>
+										<select class="form-control" id="location">
+											<option>- Select -</option>
+											<option>Duluth Retail Center</option>
+											<option>Edina Retail Center</option>
+											<option>Online Meeting</option>
+											<option>Roseville Retail Center</option>
+											<option>Eagan</option>
+										</select>
+									</div>
+									<div class="col-auto form-group">
+										<button type="submit" class="btn btn-primary">
+											<i class="fa fa-search" aria-hidden="true"></i>
+											View Appointments
+										</button>
+									</div>
+									<div class="col-auto form-group">
+										<button type="submit" class="btn btn-primary">
+											<i class="fa fa-print" aria-hidden="true"></i>
+											Print
+										</button>
+									</div>
+								</div>
+							</form>
+							<p><strong>Select a location and date to view appointments.</strong></p>
+							<table class="table table-striped table-bordered table-responsive">
+								<caption>Scheduled Appointments <span class="badge badge-warning">4</span></caption>
+								<thead>
+									<tr>
+										<th>Time</th>
+										<th>Client</th>
+										<th>Reason</th>
+										<th>Outcome</th>
+										<th class="text-center">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>8:00-9:00</td>
+										<td><a href="#">Ruoqi Chen</a></td>
+										<td>Sales</td>
+										<td>
+											<label for="outcomeId" class="sr-only"></label>
+											<select class="form-control" id="outcomeId" name="outcomeId">
+												<option>- Select -</option>
+												<option>Attended</option>
+												<option>No-Show</option>
+												<option>Cancelled</option>
+												<option>Left Early</option>
+												<option>Left Early</option>
+											</select>
+										</td>
+										<td><a href="#" class="btn btn-danger d-block"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a></td>
+									</tr>
+									<tr>
+										<td>8:00-9:00</td>
+										<td><a href="#">Sales Chen</a></td>
+										<td>Sales</td>
+										<td>
+											<label for="outcomeId" class="sr-only"></label>
+											<select class="form-control" id="outcomeId" name="outcomeId">
+												<option>- Select -</option>
+												<option>Attended</option>
+												<option>No-Show</option>
+												<option>Cancelled</option>
+												<option>Left Early</option>
+												<option>Left Early</option>
+											</select>
+										</td>
+										<td><a href="#" class="btn btn-danger d-block"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a></td>
+									</tr>
+									<tr>
+										<td>8:00-9:00</td>
+										<td><a href="#">Ruoqi Chen</a></td>
+										<td>Sales</td>
+										<td>
+											<label for="outcomeId" class="sr-only"></label>
+											<select class="form-control" id="outcomeId" name="outcomeId">
+												<option>- Select -</option>
+												<option>Attended</option>
+												<option>No-Show</option>
+												<option>Cancelled</option>
+												<option>Left Early</option>
+												<option>Left Early</option>
+											</select>
+										</td>
+										<td><a href="#" class="btn btn-danger d-block"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a></td>
+									</tr>
+									<tr>
+										<td>11:30-12:00</td>
+										<td><a href="#">Ruoqi-service Chen</a></td>
+										<td>Service</td>
+										<td>
+											<label for="outcomeId" class="sr-only"></label>
+											<select class="form-control" id="outcomeId" name="outcomeId">
+												<option>- Select -</option>
+												<option>Attended</option>
+												<option>No-Show</option>
+												<option>Cancelled</option>
+												<option>Left Early</option>
+												<option>Left Early</option>
+											</select>
+										</td>
+										<td><a href="#" class="btn btn-danger d-block"><i class="fa fa-times" aria-hidden="true"></i> Cancel</a></td>
+									</tr>
+									<tr>
+										<td colspan="5">There are no active appointments to display for the selected date and location.</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-striped table-bordered table-responsive">
+								<caption>Canceled Appointments <span class="badge badge-warning">0</span></caption>
+								<thead>
+									<tr>
+										<th>Time</th>
+										<th>Client</th>
+										<th>Reason</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="3">There are no canceled appointments to display for the selected date and location.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src='./assets/js/jquery.min.js'></script>
+		<script src='./assets/js/popper.min.js'></script>
+		<script src='./assets/js/bootstrap.min.js'></script>
+		<script src='./assets/js/scripts.min.js'></script>
+	</body>
+</html>

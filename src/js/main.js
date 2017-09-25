@@ -226,6 +226,18 @@ $(function(){
 	});
 
 	/*
+	 * Admin - Schedule Appointments
+	 */
+	if ( $( "#form-sched-appts" ).length || $( "#form-checkins" ).length ) {
+		var now = new Date();
+        var day = ("0" + now.getDate()).slice(-2);
+        var month = ("0" + (now.getMonth() + 1)).slice(-2);
+        var today = now.getFullYear()+"-"+(month)+"-"+(day);
+      	$('#form-sched-appts input#date').val(today);
+      	$('#form-checkins input#date').val(today);
+	}
+
+	/*
 	 * Footer
 	 * Always have current year after copyright symbol
 	 */

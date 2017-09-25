@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Manage Scheduled Appointments - Admin Tool | Retail Centers</title>
+		<link rel='stylesheet' href='./assets/css/style.min.css'>
+		<link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico"/>
+	</head>
+	<body id="admin">
+
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="./admin-sched-appts.html">
+				<img src="./assets/imgs/retail_logo.png" alt="Blue Cross MN Logo">
+			</a>
+			<span class="navbar-text hidden-xs">Welcome, <span class="a0-num">A0####</span>!</span>
+		</nav>
+
+		<div class="container-fluid">
+
+			<div class="row">
+				<h1 class="sr-only">View Scheduled Appointments</h1>
+				<div class="col-md-6 col-lg-3 order-2 order-lg-1">
+					<div class="card card-admin-nav">
+						<div class="card-header">
+							<i class="fa fa-leaf" aria-hidden="true"></i>
+							Menu
+						</div>
+						<div class="card-body">
+							<div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+								<a href="./admin-sched-appts.html" class="btn btn-secondary">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									View Scheduled Appointments
+								</a>
+								<a href="./admin-appt-availability.html" class="btn btn-secondary">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+									Set Appointment Availability
+								</a>
+								<a href="./admin-view-events.html" class="btn btn-secondary">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									View Events
+								</a>
+								<a href="./admin-check-in.html" class="btn btn-secondary active">
+									<i class="fa fa-check" aria-hidden="true"></i>
+									Check In
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 order-1 order-lg-2">
+					<div class="card card-admin-body">
+						<div class="card-header">Check In</div>
+						<div class="card-body">
+							<form action="">
+								<div class="row justify-content-md-center">
+									<div class="col-12 col-md-10">
+										<div class="form-group row">
+											<label for="checkInLocation" class="col-md-3 col-form-label font-weight-bold text-md-right">Location</label>
+											<div class="col-md-9">
+												<select class="form-control" id="checkInLocation">
+													<option>- Select -</option>
+													<option>Duluth Retail Center</option>
+													<option>Edina Retail Center</option>
+													<option>Online Meeting</option>
+													<option>Roseville Retail Center</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInDateTime" class="col-md-3 col-form-label font-weight-bold text-md-right">Time of Visit</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="checkInDateTime">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInFirstName" class="col-md-3 col-form-label font-weight-bold text-md-right">First Name</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="checkInFirstName">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInLastName" class="col-md-3 col-form-label font-weight-bold text-md-right">Last Name</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="checkInLastName">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInEmail" class="col-md-3 col-form-label font-weight-bold text-md-right">Email Address</label>
+											<div class="col-md-9">
+												<input type="email" class="form-control" id="checkInEmail">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInTel" class="col-md-3 col-form-label font-weight-bold text-md-right">Phone Number</label>
+											<div class="col-md-9">
+												<input type="tel" class="form-control" id="checkInTel">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInZip" class="col-md-3 col-form-label font-weight-bold text-md-right">Zip Code</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="checkInZip">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInHear" class="col-md-3 col-form-label font-weight-bold text-md-right">How did you hear about us?</label>
+											<div class="col-md-9">
+												<select class="form-control" id="checkInHear">
+													<option> - Select - </option>
+													<option>1st Available</option>
+													<option>BCBSMN Employee</option>
+													<option>BCBSMN Website</option>
+													<option>Direct Mail</option>
+													<option>Friend</option>
+													<option>Internet/Web Search</option>
+													<option>Passing By</option>
+													<option>Print Advertisement</option>
+													<option>Radio</option>
+													<option>Rep - Amy B.</option>
+													<option>Rep - Brad N.</option>
+													<option>Rep - Caitlin N.</option>
+													<option>Rep - Courtney O.</option>
+													<option>Rep - Edward A.</option>
+													<option>Rep - Emily B.</option>
+													<option>Rep - Jake L.</option>
+													<option>Rep - Jeremy H.</option>
+													<option>Rep - John D.</option>
+													<option>Rep - Kerry M.</option>
+													<option>Rep - Lauren M.</option>
+													<option>Rep - Lisa M.</option>
+													<option>Rep - Marc M.</option>
+													<option>Rep - Nelson S.</option>
+													<option>Rep - Omar F.</option>
+													<option>Rep - Renee B.</option>
+													<option>Rep - Tammy K.</option>
+													<option>Return Visit</option>
+													<option>Seminar</option>
+													<option>Social Media</option>
+													<option>Television</option>
+													<option>Other</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInReason" class="col-md-3 col-form-label font-weight-bold text-md-right">What is the reason for your visit?</label>
+											<div class="col-md-9">
+												<select class="form-control" id="checkInReason">
+													<option> - Select - </option>
+													<option>Bike Club</option>
+													<option>Customer Service</option>
+													<option>Evening/Weekend Appointment - Sales</option>
+													<option>Evening/Weekend Appointment - Service</option>
+													<option>Evening/Weekend Appointment - Wellness</option>
+													<option>Pay My Premium</option>
+													<option>Questions about my BlueCross BlueShield MN Policy</option>
+													<option>Run Club</option>
+													<option>Taking a Class</option>
+													<option>Walk Club</option>
+													<option>Walk in - Medicare needs/questions</option>
+													<option>Walk in - Need health insurance</option>
+													<option>Walk in - What is BlueCross Store/Curious</option>
+													<option>Weight Watchers</option>
+													<option>Wellness</option>
+													<option>Other</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInNumPeople" class="col-md-3 col-form-label font-weight-bold text-md-right">Number of people in this party</label>
+											<div class="col-md-9">
+												<input type="number" class="form-control" id="checkInNumPeople">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="checkInBCMem" class="col-md-3 col-form-label font-weight-bold text-md-right">Are you a Blue Cross Member?</label>
+											<div class="col-md-9">
+												<div class="btn-group w-100" data-toggle="buttons">
+													<label class="btn btn-secondary w-100">
+														<input type="radio" name="checkInBCMem" id="option2">
+														Yes
+													</label>
+													<label class="btn btn-secondary w-100">
+														<input type="radio" name="checkInBCMem" id="option3">
+														No
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-end">
+											<div class="col-12 col-md-9">
+												<div class="row">
+													<div class="col-12 col-sm-6">
+														<button type="submit" class="btn btn-primary btn-block">
+															<i class="fa fa-check" aria-hidden="true"></i>
+															Check In
+														</button>
+													</div>
+													<div class="col-12 col-sm-6">
+														<button type="reset" class="btn btn-primary btn-block">
+															<i class="fa fa-refresh" aria-hidden="true"></i>
+															Reset Form
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<p class="text-center font-weight-bold">Please select a location before checking in.</p>
+									</div>
+								</div>
+							</form>
+							<div class="card">
+								<div class="card-header">View Checkins</div>
+								<div class="card-body">
+									<form class="form-inline" id="form-checkins">
+										<div class="form-row">
+											<div class="col-auto form-group">
+												<label for="date">Date</label>
+												<input type="date" class="form-control" id="date">
+											</div>
+											<div class="col-auto form-group">
+												<label for="location">Location</label>
+												<select class="form-control" id="location">
+													<option>- Select -</option>
+													<option>Duluth Retail Center</option>
+													<option>Edina Retail Center</option>
+													<option>Online Meeting</option>
+													<option>Roseville Retail Center</option>
+													<option>Eagan</option>
+												</select>
+											</div>
+											<div class="col-auto form-group">
+												<button type="submit" class="btn btn-primary">
+													<i class="fa fa-search" aria-hidden="true"></i>
+													View Checkins
+												</button>
+											</div>
+										</div>
+									</form>
+									<table class="table table-striped table-bordered table-responsive">
+										<caption>Checkins for 9/29/2017 <span class="badge badge-warning">0</span></caption>
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Email</th>
+												<th>Phone Number</th>
+												<th>Visit Time</th>
+												<th>Visit Reason</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="5">There are no checkins to display for the selected date and location.</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src='./assets/js/jquery.min.js'></script>
+		<script src='./assets/js/popper.min.js'></script>
+		<script src='./assets/js/bootstrap.min.js'></script>
+		<script src='./assets/js/scripts.min.js'></script>
+	</body>
+</html>
