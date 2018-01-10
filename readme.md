@@ -23,3 +23,17 @@
     1. `git merge [my-feature]` - merge commits from local [my-feature] branch into local master branch
     1. `git branch –d [my-feature]` - delete local [my-feature] branch since commits now exist on master
     1. `git push origin master` - push changes to remote repository
+
+---
+
+## Pages (Zach's Local Machine)
+* <http://127.0.0.1:10080/blue-cross/retail-UI/>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/classes.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/contact.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/contact-duluth.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/contact-edina.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/contact-roseville.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-check-in.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations-new.html>
+* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-sched-appts.html>
