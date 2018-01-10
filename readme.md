@@ -27,13 +27,13 @@
 ---
 
 ## Pages (Zach's Local Machine)
-* <http://127.0.0.1:10080/blue-cross/retail-UI/>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/classes.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/contact.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/contact-duluth.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/contact-edina.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/contact-roseville.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-check-in.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations-new.html>
-* <http://127.0.0.1:10080/blue-cross/retail-UI/admin-sched-appts.html>
+* [index.html](http://127.0.0.1:10080/blue-cross/retail-UI/)
+* [classes.html](http://127.0.0.1:10080/blue-cross/retail-UI/classes.html)
+* [contact.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact.html)
+* [contact-duluth.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-duluth.html)
+* [contact-edina.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-edina.html)
+* [contact-roseville.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-roseville.html)
+* [admin-check-in.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-check-in.html)
+* [admin-locations.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations.html)
+* [admin-locations-new.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations-new.html)
+* [admin-sched-appts.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-sched-appts.html)
