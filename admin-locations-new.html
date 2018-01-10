@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Create New Location - Admin Tool | Retail Centers</title>
+		<link rel='stylesheet' href='./assets/css/style.min.css'>
+		<link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico"/>
+	</head>
+	<body id="admin">
+
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="./admin-sched-appts.html">
+				<img src="./assets/imgs/retail_logo.png" alt="Blue Cross MN Logo">
+			</a>
+			<span class="navbar-text hidden-xs">Welcome, <span class="a0-num">A0####</span>!</span>
+		</nav>
+
+		<div class="container-fluid">
+
+			<div class="row">
+				<h1 class="sr-only">View Scheduled Appointments</h1>
+				<div class="col-md-6 col-lg-3 order-2 order-lg-1">
+					<nav>
+						<div class="card card-admin-nav">
+							<div class="card-header">
+								<i class="fa fa-leaf" aria-hidden="true"></i>
+								Menu
+							</div>
+							<div class="card-body">
+								<div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										View Scheduled Appointments
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										Set Appointment Availability
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										View Events
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-check" aria-hidden="true"></i>
+										Check In
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card card-admin-nav">
+							<div class="card-header">
+								<i class="fa fa-globe" aria-hidden="true"></i>
+								Retail Center Admin
+							</div>
+							<div class="card-body">
+								<div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+									<a href="./admin-locations.html" class="btn btn-secondary active">
+										<i class="fa fa-home" aria-hidden="true"></i>
+										Locations
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-list-alt" aria-hidden="true"></i>
+										Appointment Reasons
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										Event Categories
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										Event Types
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-check" aria-hidden="true"></i>
+										Outcomes
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+										Referral Sources
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										Staff Types
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-list-alt" aria-hidden="true"></i>
+										Visit Reasons
+									</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-9 order-1 order-lg-2">
+					<div class="card card-admin-body">
+						<div class="card-header">Create New Location</div>
+						<div class="card-body">
+							<form action="">
+								<div class="row justify-content-md-center">
+									<div class="col-12 col-md-10">
+										<div class="form-group row">
+											<label for="locName" class="col-md-3 col-form-label font-weight-bold text-md-right">Location Name</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="locName">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locAddrLn1" class="col-md-3 col-form-label font-weight-bold text-md-right">Address Line 1</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="locAddrLn1">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locAddrLn2" class="col-md-3 col-form-label font-weight-bold text-md-right">Address Line 2</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="locAddrLn2">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locCity" class="col-md-3 col-form-label font-weight-bold text-md-right">City</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="locCity">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locState" class="col-md-3 col-form-label font-weight-bold text-md-right">State</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="locState">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locZip" class="col-md-3 col-form-label font-weight-bold text-md-right">ZIP Code</label>
+											<div class="col-md-9">
+												<input type="text" class="form-control" id="locZip">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locPhone" class="col-md-3 col-form-label font-weight-bold text-md-right">Phone Number</label>
+											<div class="col-md-9">
+												<input type="tel" class="form-control" id="locPhone">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locPublicEmail" class="col-md-3 col-form-label font-weight-bold text-md-right">Public Email</label>
+											<div class="col-md-9">
+												<input type="email" class="form-control" id="locPublicEmail">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locInternalEmail" class="col-md-3 col-form-label font-weight-bold text-md-right">Internal Email</label>
+											<div class="col-md-9">
+												<input type="email" class="form-control" id="locInternalEmail">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locHours" class="col-md-3 col-form-label font-weight-bold text-md-right">Hours</label>
+											<div class="col-md-9">
+												<textarea class="form-control" id="locHours" rows="2"></textarea>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locMapURL" class="col-md-3 col-form-label font-weight-bold text-md-right">Map/Location URL</label>
+											<div class="col-md-9">
+												<input type="url" class="form-control" id="locMapURL" placeholder="https://www.google.com/maps/dir//3535+Blue+Cross+Road,+Eagan,+MN+55122/">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label for="locImage" class="col-md-3 col-form-label font-weight-bold text-md-right">Image Upload</label>
+											<div class="col-md-9">
+												<input type="file" class="form-control" id="locImage">
+												<div>For best results, limit image width to 314 pixels.</div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-md-3 control-label text-md-right" for="locActive">Active</label>
+											<div class="col-md-9">
+												<div class="checkbox">
+													<label>
+														<input id="locActive" type="checkbox" class="form-check-input">
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-end">
+											<div class="col-12 col-md-9">
+												<div class="row">
+													<div class="col-12 col-sm-6">
+														<button type="submit" class="btn btn-primary btn-block">
+															<i class="fa fa-check" aria-hidden="true"></i>
+															Create
+														</button>
+													</div>
+													<div class="col-12 col-sm-6">
+														<button type="reset" class="btn btn-primary btn-block">
+															<i class="fa fa-times" aria-hidden="true"></i>
+															Cancel
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src='./assets/js/jquery.min.js'></script>
+		<script src='./assets/js/popper.min.js'></script>
+		<script src='./assets/js/bootstrap.min.js'></script>
+		<script src='./assets/js/scripts.min.js'></script>
+	</body>
+</html>

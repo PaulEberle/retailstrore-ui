@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Manage Locations - Admin Tool | Retail Centers</title>
+		<link rel='stylesheet' href='./assets/css/style.min.css'>
+		<link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico"/>
+	</head>
+	<body id="admin">
+
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="./admin-sched-appts.html">
+				<img src="./assets/imgs/retail_logo.png" alt="Blue Cross MN Logo">
+			</a>
+			<span class="navbar-text hidden-xs">Welcome, <span class="a0-num">A0####</span>!</span>
+		</nav>
+
+		<div class="container-fluid">
+
+			<div class="row">
+				<h1 class="sr-only">View Scheduled Appointments</h1>
+				<div class="col-md-6 col-lg-3 order-2 order-lg-1">
+					<nav>
+						<div class="card card-admin-nav">
+							<div class="card-header">
+								<i class="fa fa-leaf" aria-hidden="true"></i>
+								Menu
+							</div>
+							<div class="card-body">
+								<div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										View Scheduled Appointments
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-clock-o" aria-hidden="true"></i>
+										Set Appointment Availability
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										View Events
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-check" aria-hidden="true"></i>
+										Check In
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card card-admin-nav">
+							<div class="card-header">
+								<i class="fa fa-globe" aria-hidden="true"></i>
+								Retail Center Admin
+							</div>
+							<div class="card-body">
+								<div class="btn-group-vertical w-100" role="group" aria-label="Vertical button group">
+									<a href="./admin-locations.html" class="btn btn-secondary active">
+										<i class="fa fa-home" aria-hidden="true"></i>
+										Locations
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-list-alt" aria-hidden="true"></i>
+										Appointment Reasons
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										Event Categories
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-star-o" aria-hidden="true"></i>
+										Event Types
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-check" aria-hidden="true"></i>
+										Outcomes
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+										Referral Sources
+									</a>
+									<a href="./admin-check-in.html" class="btn btn-secondary">
+										<i class="fa fa-user" aria-hidden="true"></i>
+										Staff Types
+									</a>
+									<a href="./admin-sched-appts.html" class="btn btn-secondary">
+										<i class="fa fa-list-alt" aria-hidden="true"></i>
+										Visit Reasons
+									</a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<div class="col-lg-9 order-1 order-lg-2">
+					<div class="card card-admin-body">
+						<div class="card-header">Manage Events</div>
+						<div class="card-body">
+							<a href="./admin-locations-new.html" class="btn btn-primary mb-2">
+								<i class="fa fa-plus" aria-hidden="true"></i>
+								Create New Location
+							</a>
+							<table class="table table-striped table-bordered table-responsive">
+								<thead>
+									<tr>
+										<th>Location Name</th>
+										<th class="text-center">Active</th>
+										<th>Image</th>
+										<th class="text-center">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											Duluth Retail Center
+										</td>
+										<td class="text-center">
+											<i class="fa fa-check text-success" aria-hidden="true"></i>
+										</td>
+										<td>
+											<img src="./assets/imgs/location-duluth.jpg" style="max-height:34px; max-width:200px;">
+											<a href="#">Remove Image</a>
+										</td>
+										<td class="text-center">
+											<a class="btn btn-primary btn-default" data-glyph="pencil" href="#">
+												<i class="fa fa-pencil" aria-hidden="true"></i>
+												Update Location
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Edina Retail Center
+										</td>
+										<td class="text-center">
+											<i class="fa fa-check text-success" aria-hidden="true"></i>
+										</td>
+										<td>
+											<img src="./assets/imgs/location-edina.jpg" style="max-height:34px; max-width:200px;">
+											<a href="#">Remove Image</a>
+										</td>
+										<td class="text-center">
+											<a class="btn btn-primary btn-default" data-glyph="pencil" href="#">
+												<i class="fa fa-pencil" aria-hidden="true"></i>
+												Update Location
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Online Meeting
+										</td>
+										<td class="text-center">
+											<i class="fa fa-check text-success" aria-hidden="true"></i>
+										</td>
+										<td>
+										</td>
+										<td class="text-center">
+											<a class="btn btn-primary btn-default" data-glyph="pencil" href="#">
+												<i class="fa fa-pencil" aria-hidden="true"></i>
+												Update Location
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Roseville Retail Center
+										</td>
+										<td class="text-center">
+											<i class="fa fa-check text-success" aria-hidden="true"></i>
+										</td>
+										<td>
+											<img src="./assets/imgs/location-roseville.jpg" style="max-height:34px; max-width:200px;">
+											<a href="#">Remove Image</a>
+										</td>
+										<td class="text-center">
+											<a class="btn btn-primary btn-default" data-glyph="pencil" href="#">
+												<i class="fa fa-pencil" aria-hidden="true"></i>
+												Update Location
+											</a>
+										</td>
+									</tr>
+									<tr class="warning">
+										<td>
+											Eagan
+										</td>
+										<td class="text-center">
+											<i class="fa fa-times text-danger" aria-hidden="true"></i>
+										</td>
+										<td>
+											<img src="./assets/imgs/location-eagan.jpg" style="max-height:34px; max-width:200px;">
+											<a href="#">Remove Image</a>
+										</td>
+										<td class="text-center">
+											<a class="btn btn-primary btn-default" data-glyph="pencil" href="#">
+												<i class="fa fa-pencil" aria-hidden="true"></i>
+												Update Location
+											</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<script src='./assets/js/jquery.min.js'></script>
+		<script src='./assets/js/popper.min.js'></script>
+		<script src='./assets/js/bootstrap.min.js'></script>
+		<script src='./assets/js/scripts.min.js'></script>
+	</body>
+</html>
