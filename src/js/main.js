@@ -1,8 +1,13 @@
+/**
+ * Possible address to coordinates API
+ * @link https://www.geocode.farm/v3/json/forward/?addr=6807+York+Avenue+South+Edina+MN+55435+US&country=us&lang=en&count=1
+ */
+
 /*
  * @link https://wrightshq.com/playground/placing-multiple-markers-on-a-google-map-using-api-3/
  */
 // Each marker is labeled with a single alphabetical character.
-var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var labels = '123456789';
 var labelIndex = 0;
 function initialize_page_contact() {
     var map;
@@ -78,7 +83,7 @@ $(function(){
 		// Only call external Google Maps JS when it's needed (Desktop width on Contact page)
 		if($("#map_wrapper").length > 0) {
 			var script = document.createElement('script');
-			script.src = '//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize_page_contact';
+			script.src = '//maps.googleapis.com/maps/api/js?callback=initialize_page_contact';
 			$("body").append(script);
 			var cardMapWidth = $('.card-map').width();
 			$('#map_wrapper').height(cardMapWidth-40);
@@ -143,6 +148,18 @@ $(function(){
 			var navItemWidth = $(this).width();
 			$(this).find('> .dropdown-menu').width(navItemWidth-40);
 		});
+	}
+
+	if ($('.card-loc-list .loc-details').length > 0) {
+		//$('.card-loc-list .loc-details').css('background-color','red');
+  		$.getJSON("https://api.myjson.com/bins/nzzot", function(result){
+            $.each(result, function(i, locDataDesktop){
+                //$("div").append(field.name + "<br>");
+                //alert('Success!!');
+                i++;
+              $('.card-loc-list .loc-details').append('<div class="location"><h2>'+locDataDesktop.name+'<span class="badge badge-warning float-right">'+i+'</span></h2><div class="address"><div class="location-name">'+locDataDesktop.address.addressLine1+'</div><div class="street-1">'+locDataDesktop.address.addressLine2+'</div><div class="city-st-zip">'+locDataDesktop.address.city+', '+locDataDesktop.address.state+' '+locDataDesktop.address.zip+'</div></div><div class="phone"><strong>Phone:</strong><div class="phone-number">'+locDataDesktop.phone.replace(/(\d\d\d)(\d\d\d)(\d\d\d\d)/, "($1) $2-$3")+'</div><div class="tty">TTY users call 711</div></div><div class="hours"><strong>Hours:</strong><div class="week">'+locDataDesktop.hours+'</div></div><div class="parking">'+locDataDesktop.parking+'</div><a href="#" class="btn btn-primary d-block">View Classes and Events</a><a href="#" class="btn btn-primary d-block">Schedule an Appointment</a></div><hr>');
+            });
+        });
 	}
 
 	/*
@@ -242,4 +259,7 @@ $(function(){
 	 * Always have current year after copyright symbol
 	 */
 	$('.copyright .current-year').text(currentYear);
+
+
+
 });
