@@ -26,14 +26,17 @@
 
 ---
 
-## Pages (Zach's Local Machine)
-* [index.html](http://127.0.0.1:10080/blue-cross/retail-UI/)
-* [classes.html](http://127.0.0.1:10080/blue-cross/retail-UI/classes.html)
-* [contact.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact.html)
-* [contact-duluth.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-duluth.html)
-* [contact-edina.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-edina.html)
-* [contact-roseville.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-roseville.html)
-* [admin-check-in.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-check-in.html)
-* [admin-locations.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations.html)
-* [admin-locations-new.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations-new.html)
-* [admin-sched-appts.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-sched-appts.html)
+## Pages
+
+|S3|Zach's Local|
+|---|---|
+|[index.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/)|[index.html](http://127.0.0.1:10080/blue-cross/retail-UI/)|
+|[classes.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/classes.html)|[classes.html](http://127.0.0.1:10080/blue-cross/retail-UI/classes.html)|
+|[contact.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/contact.html)|[contact.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact.html)|
+|[contact-duluth.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/contact-duluth.html)|[contact-duluth.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-duluth.html)|
+|[contact-edina.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/contact-edina.html)|[contact-edina.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-edina.html)|
+|[contact-roseville.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/contact-roseville.html)|[contact-roseville.html](http://127.0.0.1:10080/blue-cross/retail-UI/contact-roseville.html)|
+|[admin-check-in.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-check-in.html)|[admin-check-in.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-check-in.html)|
+|[admin-locations.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-locations.html)|[admin-locations.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations.html)|
+|[admin-locations-new.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-locations-new.html)|[admin-locations-new.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations-new.html)|
+|[admin-sched-appts.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-sched-appts.html)|[admin-sched-appts.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-sched-appts.html)|
