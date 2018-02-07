@@ -152,7 +152,7 @@ $(function(){
 
 	if ($('.card-loc-list .loc-details').length > 0) {
 		//$('.card-loc-list .loc-details').css('background-color','red');
-  		$.getJSON("https://api.myjson.com/bins/nzzot", function(result){
+  		$.getJSON("https://gm31gahou9.execute-api.us-west-2.amazonaws.com/Stage/location", function(result){
             $.each(result, function(i, locDataDesktop){
                 //$("div").append(field.name + "<br>");
                 //alert('Success!!');
