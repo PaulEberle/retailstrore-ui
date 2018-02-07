@@ -162,6 +162,14 @@ $(function(){
         });
 	}
 
+	if ($('.card-table #table-classes tbody').length > 0) {
+		$.getJSON("https://gm31gahou9.execute-api.us-west-2.amazonaws.com/Stage/event", function(result){
+	    $.each(result, function(i, classesData){
+	      $('.card-table #table-classes tbody').append('<tr><td><a href="#'+classesData.id+'" class="class-name d-none d-md-block">'+classesData.name+'</a><a href="#'+classesData.id+'" class="d-md-none"><div class="line-1"><span class="class-name">'+classesData.name+'</span> <span class="location">'+classesData.location+'</span></div><div class="line-2"><span class="date">'+classesData.date+'</span><br><span class="time">'+classesData.startTime+' - '+classesData.endTime+'</span></div><div class="line-3"><span class="option">Sign Up</span></div></a></td><td data-date="20170906-1200" class="date">'+classesData.date+'</td><td data-time="1200" class="time">'+classesData.startTime+' - '+classesData.endTime+'</td><td class="location">'+classesData.location+'</td><td class="seats">'+classesData.capacity+'</td><td class="option"><a href="#'+classesData.id+'" class="btn btn-primary d-block">Sign Up</a></td></tr>');
+	    });
+	  });
+	}
+
 	/*
 	 * Page - Classes
 	 */
