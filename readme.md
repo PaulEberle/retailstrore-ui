@@ -40,5 +40,3 @@
 |[admin-locations.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-locations.html)|[admin-locations.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations.html)|
 |[admin-locations-new.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-locations-new.html)|[admin-locations-new.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-locations-new.html)|
 |[admin-sched-appts.html](http://bcbsmn-retailstore-ui.s3-website-us-west-2.amazonaws.com/admin-sched-appts.html)|[admin-sched-appts.html](http://127.0.0.1:10080/blue-cross/retail-UI/admin-sched-appts.html)|
-
-Test
